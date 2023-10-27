@@ -57,8 +57,8 @@ app.get('/youtube', (req, res) => {
 })
 
 
-app.get('/github', (req, res) => {
-    res.json(github_data)
+app.get('/github', (req, res) => { //get request to github page and send the github data
+    res.json(github_data) // here req and res are objects and json is a method of res object which converts the data into json format and sends it to the browser 
 })
 
 app.listen(process.env.PORT, () => {
